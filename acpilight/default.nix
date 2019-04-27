@@ -8,10 +8,7 @@ stdenv.mkDerivation rec {
     sha256 = "1fszya73zgr55dxajd8v0yif96w49r40rrpnfcsi6ac8m903g1wx";
   };
 
-  pyenv = python36.withPackages (pythonPackages: with pythonPackages; [
-    argparse
-  ]);
-
+  pyenv = python36.withPackages (pythonPackages: with pythonPackages; []);
 
   buildInputs = [ pyenv ];
 
